@@ -5,14 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Briefcase, Calendar, Globe, MapPin, X } from "lucide-react"
 
 // Define the experience type
-type Experience = {
-  company: string
-  Technology: string
-  period: string
-  role: string
-  responsibilities: string[]
-  image: string
-}
 
 export default function ExperienceCards() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
