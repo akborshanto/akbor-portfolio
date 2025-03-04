@@ -23,7 +23,11 @@ export default function ExperienceCards() {
         company: "Quick Bites",
         Technology: " Next JS | React JS | Socket.io | Node JS | Express JS | NextAuth.JS | MongoDB | Tailwind CSS",
         period: "2024 Decembar",
-        role: "MERN Stack Developer",
+        links: [
+          { name: "Live Link || ", url: "https://quick-bites-tau.vercel.app/" },
+          { name: "GitHub Client   ", url: "https://github.com/sojibislam9878/quick_bites" },
+          
+        ],
         responsibilities: [
           "Secure Payment Integration: Seamlessly integrated SSLCommerz to enable safe, encrypted online transactions,  enhancing customer trust and convenience",
   
@@ -37,7 +41,11 @@ export default function ExperienceCards() {
         company: "FitnessQuest ",
         Technology: "React JS | Node JS | Express JS | JWT | MongoDB | Tailwind CSS",
         period: "2024 - Present",
-        role: "MERN Stack Developer",
+        links: [
+          { name: "Live Link || ", url: "https://workout-03.web.app/" },
+          { name: "GitHub Client|| ", url: "https://github.com/akborshanto/workout-client" },
+          { name: " GitHub Server  ", url: "https://github.com/akborshanto/workout-server" },
+        ],
         responsibilities: [
           "Secure Payment Integration: Seamlessly integrated SSLCommerz to enable safe, encrypted online transactions, enhancing customer trust and convenience.",
           "Comprehensive Admin Panel: A user-friendly admin panel for managing trainers, user requests, and overall platform operations.",
@@ -51,7 +59,11 @@ export default function ExperienceCards() {
         company: " NaturalCraft",
         Technology: "React JS | Node JS | Express JS  MongoDB | Tailwind CSS",
         period: "2024 ",
-        role: "Mern Stack Developer",
+        links: [
+          { name: "Live Link || ", url: "https://naturalcraft-7d1c8.web.app/" },
+          { name: "GitHub Client ||", url: "https://github.com/akborshanto/natural-craft-client" },
+          { name: "GitHub Server ", url: "https://github.com/akborshanto/natural-craft-server" },
+        ],
         responsibilities: [
           "Efficient Product Management: Enabled users to add, modify, and manage their crafted products efficiently.",
           "Advanced Authentication: Secured user interactions through advanced authentication mechanisms.",
@@ -110,6 +122,18 @@ export default function ExperienceCards() {
                     </p>
                     <p className="text-xl font-medium mb-4 dark:text-gray-200 flex items-center">
                       <Briefcase className="w-5 h-5 mr-2" />
+
+                      {exp.links.map((link, index) => (
+    <a
+      key={index}
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 underline hover:text-blue-800"
+    >
+      {link.name}
+    </a>
+  ))}
                       {exp.role}
                     </p>
                     <ul className="list-none space-y-2">
