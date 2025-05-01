@@ -51,7 +51,7 @@ const BlogDetail = async ({ params }) => {
           <div className="mt-10">
             <Link href="/">
               <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-2 rounded-md transition">
-                ← Back to Blog
+                ← Back to  Blog
               </button>
             </Link>
           </div>
