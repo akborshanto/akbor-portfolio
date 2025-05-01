@@ -6,6 +6,7 @@ import Services from "./components/Services"
 import Education from "./components/Education"
 import Contact from "./components/Contact"
 import FloatingNav from "./components/floating-nav"
+import BlogSection from './(alldetail)/blog/Blog';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Skills />
       <Services />
       <Education />
+      <BlogSection     ></BlogSection>
       <Contact />
     </main>
   )

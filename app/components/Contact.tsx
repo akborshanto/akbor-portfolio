@@ -87,7 +87,7 @@ export default function Contact() {
                 </a>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <MapPin className="w-6 h-6 mr-3 text-blue-600" />
-                Chittagong,Mirsharai ,Bangladesh
+          Mirsharai    ,   Chittagong,,Bangladesh
                 </div>
               </div>
             </div>

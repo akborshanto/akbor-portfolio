@@ -9,78 +9,86 @@ const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
     <Icon className={`w-6 h-6 ${color}`} />
   </div>
 )
-
 const skills = [
   {
     icon: Code,
-    name: "Frontend Development",
-    tech: "React.js, Next.js",
+    name: "HTML & CSS",
+    tech: "HTML5, CSS3",
     description:
-      "Building responsive and interactive user interfaces with modern React features and Next.js for optimal performance.",
-    color: "text-blue-500",
-  },
-  {
-    icon: Server,
-    name: "Backend Development",
-    tech: "Node.js, Express, Fastify",
-    description: "Creating robust server-side applications with focus on scalability and clean architecture.",
-    color: "text-green-500",
-  },
-  {
-    icon: Database,
-    name: "Database Management",
-    tech: "MongoDB, Mongoose",
-    description: "Designing and implementing efficient database schemas and queries for optimal data management.",
-    color: "text-purple-500",
+      "Structuring and styling websites with semantic HTML and modern CSS techniques.",
+    color: "text-pink-500",
   },
   {
     icon: Layout,
-    name: "UI/UX Design",
-    tech: "Tailwind CSS, Material UI",
-    description: "Crafting beautiful and intuitive user interfaces with modern design principles and frameworks.",
-    color: "text-pink-500",
+    name: "Tailwind CSS",
+    tech: "Tailwind Utility-First Framework",
+    description:
+      "Creating responsive and modern UI with fast and customizable Tailwind CSS utilities.",
+    color: "text-sky-500",
+  },
+  {
+    icon: Code,
+    name: "JavaScript",
+    tech: "ES6+",
+    description:
+      "Building dynamic and interactive functionalities with modern JavaScript syntax and features.",
+    color: "text-yellow-400",
+  },
+  {
+    icon: Code,
+    name: "React.js",
+    tech: "Hooks, JSX, Components",
+    description:
+      "Developing fast and reusable components using modern React best practices.",
+    color: "text-blue-500",
+  },
+  {
+    icon: Workflow,
+    name: "Next.js",
+    tech: "App Router, SSR, SSG",
+    description:
+      "Building scalable web applications with powerful features like SSR and routing in Next.js.",
+    color: "text-black dark:text-white",
+  },
+  {
+    icon: Server,
+    name: "Node.js",
+    tech: "Runtime Environment",
+    description:
+      "Building scalable backend services and APIs using non-blocking event-driven architecture.",
+    color: "text-green-500",
+  },
+  {
+    icon: Cpu,
+    name: "Express.js",
+    tech: "Web Framework",
+    description:
+      "Creating robust and lightweight RESTful APIs with Express.js for server-side logic.",
+    color: "text-gray-500",
+  },
+  {
+    icon: Database,
+    name: "MongoDB",
+    tech: "NoSQL Database",
+    description:
+      "Designing and managing flexible database schemas using MongoDB and Mongoose.",
+    color: "text-green-700",
   },
   {
     icon: GitBranch,
     name: "Version Control",
-    tech: "Git, GitHub",
-    description: "Managing code versions efficiently with Git and collaborating effectively through GitHub.",
+    tech: "Git & GitHub",
+    description:
+      "Tracking code changes and collaborating on projects with Git and GitHub.",
     color: "text-orange-500",
   },
-  {
-    icon: Terminal,
-    name: "TypeScript",
-    tech: "TypeScript, JavaScript",
-    description: "Writing type-safe code for better maintainability and developer experience.",
-    color: "text-yellow-500",
-  },
-  {
-    icon: Layers,
-    name: "State Management",
-    tech: "Redux, Context API",
-    description: "Managing complex application state with modern state management solutions.",
-    color: "text-indigo-500",
-  },
-  {
-    icon: Cpu,
-    name: "API Development",
-    tech: "REST, GraphQL",
-    description: "Designing and implementing efficient APIs for seamless data communication.",
-    color: "text-red-500",
-  },
-  {
-    icon: Globe,
-    name: "Web Performance",
-    tech: "Optimization, SEO",
-    description: "Optimizing web applications for speed, accessibility, and search engine visibility.",
-    color: "text-teal-500",
-  },
-  
 ]
+
 
 export default function Skills() {
   return (
     <section id="skills" className="py-20 relative overflow-hidden">
+      <a href="https://storyset.com/education">Education illustrations by Storyset</a>
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-indigo-900 dark:to-purple-900"></div>
 
