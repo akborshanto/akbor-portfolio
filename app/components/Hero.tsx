@@ -161,7 +161,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <motion.a
-                href="/resume/resume.pdf"
+                href="/resume/resumeAkbor.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 download
                 whileHover={{ scale: 1.05 }}
